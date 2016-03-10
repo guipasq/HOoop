@@ -23,8 +23,11 @@ class Generador(object):
 
         muestras = range(cantidad_muestras)
         #TODO agregar un ruido blanco a la senal
+        
 
         ret = [self.amplitud*math.sin(2*(1/self.frecuencia)*i+self.fase) \
         for i in muestras]
 
         return ret
+        #ESTO ES UNA ONDA SINUSOIDAL
+
